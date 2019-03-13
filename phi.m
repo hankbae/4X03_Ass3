@@ -6,5 +6,4 @@ function f = phi(xhat,yhat)
     
     Y = @(y) adsimpson(@(x) func(x,y),a,b,tol,0,100);
     f = adsimpson(Y,a,b,tol,0,100);
-    
 end
